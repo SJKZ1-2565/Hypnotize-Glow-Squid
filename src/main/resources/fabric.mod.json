@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "hypnotized_glow_squid",
+  "version": "${version}",
+  "name": "Hypnotize Glow Squid",
+  "description": "Make Glow Squid can hypnotizing player",
+  "authors": [
+    "SJKZ1"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/hypnotized_glow_squid/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "sjkz1.mod.hypnotized_glow_squid.client.HypnotizeGlowSquidClient"
+    ],
+    "main": [
+      "sjkz1.mod.hypnotized_glow_squid.HypnotizeGlowSquid"
+    ]
+  },
+  "mixins": [
+    "hypnotized_glow_squid.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "1.18.2"
+  }
+}
